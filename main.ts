@@ -52,6 +52,7 @@ function set_foreground_color(color: number) {
 //  advance next page
 function main() {
     serial.redirect(SerialPin.P1, SerialPin.P0, BaudRate.BaudRate115200)
+    basic.pause(500)
     basic.forever(function on_forever() {
         let temperature: number;
         let d0: any;

@@ -42,6 +42,7 @@ def on_forever():
 
 def main():
     serial.redirect(SerialPin.P1, SerialPin.P0, BaudRate.BAUD_RATE115200)
+    basic.pause(500)
     basic.forever(on_forever)
 
 main()
